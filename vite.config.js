@@ -1,32 +1,27 @@
-import vue from '@vitejs/plugin-vue'
-import { defineConfig } from 'vite'
-const path = require('path')
+import vue from "@vitejs/plugin-vue";
+import * as path from "path";
+import { defineConfig } from "vite";
 
 export default defineConfig({
-  plugins: [
-    vue(),
-  ],
+  plugins: [vue()],
   build: {
     lib: {
-      entry: path.resolve(__dirname, './src/index.js'),
-      name: 'AutoSizer',
-      fileName: "vue-auto-sizer",
+      entry: path.resolve(__dirname, "src/index.js"),
+      name: "AutoSizer",
+      fileName: "vue-auto-sizer"
     },
-  },
-  rollupOptions: {
-    external: [
-      {vue: path.resolve('./node_modules/vue')}
-    ],
-    output: {
-      globals: {
-        vue: 'Vue',
-      },
-    },
+    rollupOptions: {
+      external: ["vue"],
+      output: {
+        globals: {
+          vue: "Vue"
+        }
+      }
+    }
   },
   resolve: {
-    alias:{
-      '@': path.resolve(__dirname, "./src"),
-    },
-    dedupe: ['vue'],
-  },
-})
+    alias: {
+      "@": path.resolve(__dirname, "src")
+    }
+  }
+});
