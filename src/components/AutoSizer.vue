@@ -1,6 +1,6 @@
 <template>
   <div ref="autoSizer" :style="{ ...outerStyle }">
-    <slot :size="childParams"></slot>
+    <slot name="default" :size="childParams"></slot>
   </div>
 </template>
 

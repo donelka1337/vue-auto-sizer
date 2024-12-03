@@ -1,3 +1,3 @@
-import AutoSizer from './components/AutoSizer'
+import AutoSizer from '@/components/AutoSizer.vue'
 
 export default AutoSizer

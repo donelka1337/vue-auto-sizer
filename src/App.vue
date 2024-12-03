@@ -37,7 +37,7 @@
 </template>
 
 <script>
-import AutoSizer from './components/AutoSizer.vue'
+import AutoSizer from '@/components/AutoSizer.vue'
 
 export default {
   name: 'App',
