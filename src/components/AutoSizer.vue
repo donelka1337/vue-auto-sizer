@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import createDetectElementResize from '../detectElementResize'
+import createDetectElementResize from '@/detectElementResize.js'
 export default {
   name: 'AutoSizer',
   props: {
