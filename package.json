@@ -15,17 +15,12 @@
     "dist",
     "src/components/"
   ],
-  "main": "./dist/vue-tri-state-checkbox.umd.cjs",
-  "module": "./dist/vue-tri-state-checkbox.js",
+  "main": "./dist/vue-auto-sizer.umd.cjs",
+  "module": "./dist/vue-auto-sizer.mjs",
   "exports": {
     ".": {
-      "types": "./dist/index.d.ts",
-      "import": "./dist/vue-tri-state-checkbox.js",
-      "require": "./dist/vue-tri-state-checkbox.umd.cjs"
-    },
-    "./dist/style.css": {
-      "import": "./dist/style.css",
-      "require": "./dist/style.css"
+      "import": "./dist/vue-auto-sizer.mjs",
+      "require": "./dist/vue-auto-sizer.umd.cjs"
     }
   },
   "scripts": {
